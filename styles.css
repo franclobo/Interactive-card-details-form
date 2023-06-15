@@ -1,0 +1,187 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header {
+  background-image: url(./images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card-back {
+  margin: 30px -20px 40px 80px;
+  width: 220px;
+}
+
+.card-back__text {
+  position: relative;
+  left: -30px;
+  top: -5px;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.card {
+  width: 0;
+  height: 100px;
+}
+
+.card-front {
+  display: block;
+  position: relative;
+  top: -90px;
+  left: 10px;
+  width: 270px;
+}
+
+.card__logo {
+  display:block;
+  position: relative;
+  width: 50px;
+  height: auto;
+  top: -220px;
+  left: 20px;
+}
+
+.img-card-logo {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  position: relative;
+  top: -190px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+  width: 220px;
+}
+
+.card-number {
+  font-size: 19px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.card-data {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 20px;
+  color: #fff;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.card-holder,
+.form-card-number {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.card-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-details__date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-details__cvc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-details__date-input {
+  display: flex;
+  gap: 10px;
+}
+
+.input {
+  width: 50%;
+  height: 30px;
+  border: solid 1px#e5e5e5;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.input-cvc {
+  width: 90%;
+  height: 30px;
+  border: solid 1px#e5e5e5;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.input-holder,
+.input-number {
+  height: 30px;
+  border: solid 1px#e5e5e5;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 40px;
+  background-color: #1b0227;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #1b0227;
+  margin: 0;
+}
