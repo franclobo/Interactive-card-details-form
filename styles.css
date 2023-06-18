@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Space Grotesk;
+  src: url(https://fonts.google.com/specimen/Space+Grotesk);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -47,7 +52,7 @@ header {
   left: 160px;
   bottom: 47px;
   font-size: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Space Grotesk, sans-serif;
   font-weight: 400;
   letter-spacing: 1px;
   color: #fff;
@@ -102,7 +107,7 @@ header {
   gap: 20px;
   color: #fff;
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Space Grotesk, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -188,7 +193,7 @@ header {
   border: none;
   border-radius: 5px;
   color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Space Grotesk, sans-serif;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -196,9 +201,9 @@ header {
 }
 
 label {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Space Grotesk, sans-serif;
   font-size: 10px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1px;
   color: #1b0227;
   margin: 0;
@@ -223,7 +228,7 @@ label {
 .confirm__img,
 .confirm__title,
 .confirm__text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Space Grotesk, sans-serif;
   align-self: center;
 }
 
@@ -242,6 +247,15 @@ label {
   100% {
     transform: scale(1);
   }
+}
+
+input:focus {
+  outline: none;
+  border: solid 1px hsl(249, 99%, 64%);
+}
+
+input:active {
+  border: solid 1px hsl(249, 94%, 30%);
 }
 
 @media (min-width: 768px) {
@@ -305,7 +319,7 @@ label {
     left: 67px;
     top: 20px;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Space Grotesk, sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -360,7 +374,7 @@ label {
     gap: 115px;
     color: #fff;
     margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Space Grotesk, sans-serif;
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -412,6 +426,6 @@ label {
   .confirm__img,
   .confirm__title,
   .confirm__text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Space Grotesk, sans-serif;
   }
 }
