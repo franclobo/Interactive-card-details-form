@@ -38,7 +38,7 @@ header {
 
 .card {
   position: relative;
-  top:220px;
+  top: 220px;
   right: 163px;
 }
 
@@ -63,7 +63,7 @@ header {
 }
 
 .card__logo {
-  display:block;
+  display: block;
   position: relative;
   width: 50px;
   height: auto;
@@ -159,7 +159,7 @@ header {
 .input {
   width: 50%;
   height: 30px;
-  border: solid 1px#e5e5e5;
+  border: solid 1px #e5e5e5;
   border-radius: 5px;
   padding: 0 10px;
 }
@@ -167,7 +167,7 @@ header {
 .input-cvc {
   width: 90%;
   height: 30px;
-  border: solid 1px#e5e5e5;
+  border: solid 1px #e5e5e5;
   border-radius: 5px;
   padding: 0 10px;
 }
@@ -175,7 +175,7 @@ header {
 .input-holder,
 .input-number {
   height: 30px;
-  border: solid 1px#e5e5e5;
+  border: solid 1px #e5e5e5;
   border-radius: 5px;
   padding: 0 10px;
 }

@@ -2,7 +2,7 @@ const content = document.getElementById('content');
 const complete = document.getElementById('complete');
 
 const Content = () => {
-    content.innerHTML = `
+  content.innerHTML = `
         <form class="form" method="post">
           <div class="card-holder">
             <label for="cardholder-name">CARDHOLDER NAME</label>
@@ -42,7 +42,7 @@ const Confirm = () => {
 
   const continueBtn = document.getElementById('continue');
   continueBtn.addEventListener('click', () => {
-    location.reload();
+    window.location.reload();
   });
 };
 
@@ -50,20 +50,18 @@ window.addEventListener('load', () => {
   Content();
   const form = document.querySelector('.form');
   form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Evita el envío del formulario por defecto
+    event.preventDefault();
 
-    // Realiza la validación manualmente
     if (form.checkValidity()) {
       Confirm();
       content.style.display = 'none';
     } else {
-      // Si el formulario no es válido, puedes mostrar un mensaje de error o tomar alguna otra acción
-      alert('Por favor, completa todos los campos requeridos.');
+      alert('Please complete all required fields.');
     }
   });
 
   const continueBtn = document.getElementById('continue');
   continueBtn.addEventListener('click', () => {
-    location.reload();
+    window.location.reload();
   });
 });
