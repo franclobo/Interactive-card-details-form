@@ -16,8 +16,8 @@ const Content = () => {
             <div class="card-details__date">
               <label for="exp-date">EXP. DATE (MM/YY)</label>
               <div class="card-details__date-input">
-                <input class="input" type="text" id="exp-date" name="exp-date" placeholder="MM" required>
-                <input class="input" type="text" id="exp-date" name="exp-date" placeholder="YY" required>
+                <input class="input" type="text" id="exp-date-mm" name="exp-date" placeholder="MM" required>
+                <input class="input" type="text" id="exp-date-yy" name="exp-date" placeholder="YY" required>
               </div>
             </div>
             <div class="card-details__cvc">
@@ -31,12 +31,14 @@ const Content = () => {
 
 const Confirm = () => {
   complete.innerHTML = `
-        <div class="confirm__img">
-          <img src="./images/icon-complete.svg" class="icon__complete" alt="complete icon">
-        </div>
-        <h2 class="confirm__title">THANK YOU!</h2>
-        <p class="confirm__text">We've added your card details</p>
-        <button class="confirm__btn" id="continue" type="button">Continue</button>`;
+        <div class="confirm__container">
+          <div class="confirm__img">
+            <img src="./images/icon-complete.svg" class="icon__complete" alt="complete icon">
+          </div>
+          <h2 class="confirm__title">THANK YOU!</h2>
+          <p class="confirm__text">We've added your card details</p>
+          <button class="confirm__btn" id="continue" type="button">Continue</button>
+        </div>`;
 
   const continueBtn = document.getElementById('continue');
   continueBtn.addEventListener('click', () => {
