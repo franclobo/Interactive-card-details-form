@@ -3,7 +3,7 @@ const complete = document.getElementById('complete');
 
 const Content = () => {
     content.innerHTML = `
-        <form class="form" method="post" action="index.html">
+        <form class="form" method="post">
           <div class="card-holder">
             <label for="cardholder-name">CARDHOLDER NAME</label>
             <input class="input-holder" type="text" id="cardholder-name" name="cardholder-name" placeholder="e.g. Jane Appleseed" required>
@@ -25,7 +25,7 @@ const Content = () => {
               <input class="input-cvc" type="text" id="cvc" name="cvc" placeholder="e.g. 123" required>
             </div>
           </div>
-          <button class="submit-btn" id="confirm" type="button">Confirm</button>
+          <button class="submit-btn" id="confirm" type="submit">Confirm</button>
         </form>`;
 };
 
@@ -48,10 +48,22 @@ const Confirm = () => {
 
 window.addEventListener('load', () => {
   Content();
-  const confirm = document.getElementById('confirm');
-  confirm.addEventListener('click', () => {
-    Content();
-    Confirm();
-    content.style.display = 'none';
+  const form = document.querySelector('.form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Evita el envío del formulario por defecto
+
+    // Realiza la validación manualmente
+    if (form.checkValidity()) {
+      Confirm();
+      content.style.display = 'none';
+    } else {
+      // Si el formulario no es válido, puedes mostrar un mensaje de error o tomar alguna otra acción
+      alert('Por favor, completa todos los campos requeridos.');
+    }
+  });
+
+  const continueBtn = document.getElementById('continue');
+  continueBtn.addEventListener('click', () => {
+    location.reload();
   });
 });
