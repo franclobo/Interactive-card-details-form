@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Interactive-card-details-form](https://github.com/franclobo/Interactive-card-details-form)
+- Live Site URL: [Interactive cards details solution](https://interactive-cards-details-solution.netlify.app/)
 
 ## My process
 
